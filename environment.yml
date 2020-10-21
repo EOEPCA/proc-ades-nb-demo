@@ -7,3 +7,6 @@ dependencies:
   - requests
   - shapely
   - gdal
+  - pystac=0.3.3
+  - matplotlib
+  - pyyaml
