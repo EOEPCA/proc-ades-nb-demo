@@ -1,0 +1,9 @@
+name: env_eoepca
+channels:
+  - conda-forge
+  - terradue
+dependencies:
+  - ipykernel
+  - requests
+  - shapely
+  - gdal
