@@ -6,3 +6,11 @@ __pycache__
 *.data
 *.dim
 .DS_Store
+.bash*
+.cache
+.con*
+.ipython
+.jupyter
+.local
+.npm
+vegetation-index.xml
