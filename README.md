@@ -20,6 +20,14 @@ Open a browser tab on the address 0.0.0.0:9005 or 127.0.0.1:9005 to access the J
 
 ## Running the demonstration
 
-Provide the authentication token when requested.
+The demonstration has three steps:
+
+- Registering a CWL application package in a resource manager catalog
+- Deploy a CWL application package as a WPS processing service and submit an execution request
+- Discovery and exploition of the generated results using STAC  
+
+What you'll need:
+- a Terradue username and API key to register the CWL application package in a resource manager catalog
+- an authentication token 
 
 Execute the cells one after the other.
