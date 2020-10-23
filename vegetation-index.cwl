@@ -29,7 +29,7 @@ $graph:
     ResourceRequirement: {}
 - class: Workflow
   doc: Vegetation index processor
-  id: vegetation-index2
+  id: vegetation-index
   inputs:
     aoi:
       doc: Area of interest in WKT
