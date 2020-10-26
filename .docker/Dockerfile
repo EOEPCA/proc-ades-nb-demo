@@ -13,3 +13,5 @@ ENV PREFIX /opt/anaconda/envs/eoepca
 RUN test -f ${HOME}/.docker/postBuild && chmod +x ${HOME}/.docker/postBuild && ${HOME}/.docker/postBuild || exit 0
 
 WORKDIR ${HOME}
+
+ENTRYPOINT [ "jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--notebook-dir", "/home/jovyan", "--allow-root", "--NotebookApp.token=''" ]
