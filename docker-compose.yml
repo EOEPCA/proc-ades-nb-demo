@@ -5,6 +5,12 @@ services:
     build:
       context: .
       dockerfile: .docker/Dockerfile
+    networks:
+    - minikube
     ports:
     - "9005:8888"
     entrypoint: sh -c 'jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --notebook-dir /home/jovyan --allow-root --NotebookApp.token=""'
+
+networks:
+  minikube:
+    external: true
