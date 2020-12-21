@@ -2,7 +2,7 @@ FROM terradue/l1-binder:3.1
 
 USER ${NB_USER}
 
-COPY --chown=${NB_USER}:${NB_GID} . ${HOME}
+COPY --chown=jovyan:100 . ${HOME}
 
 RUN /opt/anaconda/bin/conda env create --file ${HOME}/environment.yml && /opt/anaconda/bin/conda clean -a -y
 
